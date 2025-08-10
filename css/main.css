@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(../images/bg-pattern-top.svg),
+                    url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat , no-repeat;
+    /* background-size: 40%; */
+    background-position: -100% 150% , 150% -100%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: "Kumbh Sans";
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-150px,-150px);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.container .main-img {
+    width: 100%;
+    height: calc(100%/3);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container .main-img img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container .prof-img {
+    border: 5px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    transform: translate(0%,-50%);
+}
+
+.container .prof-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.container .prof-data {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: translate(0,-180%);
+}
+
+.container .prof-data .name,
+.container .prof-data .age {
+    margin-left: 20px;
+}
+
+.container .prof-data .name {
+    font-weight: 700;
+}
+
+.container .prof-data .age {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.container .adrs {
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    transform: translate(0,-150%);
+}
+
+.container .num {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .num .num-1 {
+    width: calc(100%/3);
+    text-align: center;
+}
+
+.container .num .num-1 .num-2 {
+    font-weight: 700;
+}
+
+.container .num .num-1 .num-type {
+    color: hsl(0, 0%, 59%);
+}
